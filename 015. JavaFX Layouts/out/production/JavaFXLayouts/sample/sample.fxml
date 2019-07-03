@@ -1,0 +1,163 @@
+<!--Layout-->
+<!--Templates-->
+<!--Layout-->
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.control.Label?>
+<GridPane fx:controller="sample.Controller"
+          xmlns:fx="http://javafx.com/fxml" alignment="center" hgap="10" vgap="10">
+    <Label text="Uncomment one of available layout"></Label>
+</GridPane>
+
+
+
+<!--Layout-->
+<!--TilePane-->
+<!--Layout-->
+<!--<?import javafx.scene.control.Button?>-->
+<!--<?import javafx.geometry.Insets?>-->
+<!--<?import javafx.scene.layout.TilePane?>-->
+<!--<TilePane fx:controller="sample.Controller"-->
+          <!--xmlns:fx="http://javafx.com/fxml">-->
+    <!--<padding>-->
+        <!--<Insets bottom="15"></Insets>-->
+    <!--</padding>-->
+    <!--<Button text="Button one"></Button>-->
+    <!--<Button text="Button two"></Button>-->
+    <!--<Button text="Button three"></Button>-->
+    <!--<Button text="Button four"></Button>-->
+    <!--<Button text="Button five"></Button>-->
+    <!--<Button text="Button six"></Button>-->
+    <!--<Button text="Button seven"></Button>-->
+<!--</TilePane>-->
+
+
+
+<!--Layout-->
+<!--FlowPane-->
+<!--Layout-->
+<!--<?import javafx.scene.control.Button?>-->
+<!--<?import javafx.geometry.Insets?>-->
+<!--<?import javafx.scene.layout.FlowPane?>-->
+<!--<FlowPane fx:controller="sample.Controller"-->
+          <!--xmlns:fx="http://javafx.com/fxml" orientation="HORIZONTAL">-->
+    <!--<padding>-->
+        <!--<Insets bottom="15"></Insets>-->
+    <!--</padding>-->
+    <!--<Button text="Button one"></Button>-->
+    <!--<Button text="Button two"></Button>-->
+    <!--<Button text="Button three"></Button>-->
+    <!--<Button text="Button four"></Button>-->
+    <!--<Button text="Button five"></Button>-->
+    <!--<Button text="Button six"></Button>-->
+    <!--<Button text="Button seven"></Button>-->
+<!--</FlowPane>-->
+
+
+
+<!--Layout-->
+<!--StackPane-->
+<!--Layout-->
+<!--<?import javafx.scene.control.Button?>-->
+<!--<?import javafx.scene.layout.StackPane?>-->
+<!--<StackPane fx:controller="sample.Controller"-->
+           <!--xmlns:fx="http://javafx.com/fxml" >-->
+    <!--<Button text="Verrry big button" style="-fx-background-color: brown"></Button>-->
+    <!--<Button text="Small" style="-fx-background-color: yellow"></Button>-->
+<!--</StackPane>-->
+
+
+
+<!--Layout-->
+<!--BorderPane-->
+<!--Layout-->
+<!--<?import javafx.scene.layout.BorderPane?>-->
+<!--<?import javafx.scene.control.Label?>-->
+<!--<BorderPane fx:controller="sample.Controller"-->
+            <!--xmlns:fx="http://javafx.com/fxml">-->
+    <!--<top>-->
+        <!--<Label text="This is a top side" alignment="CENTER" BorderPane.alignment="CENTER"></Label>-->
+    <!--</top>-->
+    <!--<left>-->
+        <!--<Label text="This is a left side" BorderPane.alignment="BOTTOM_LEFT"></Label>-->
+    <!--</left>-->
+    <!--<center>-->
+        <!--<Label text="This is a center side" alignment="CENTER"></Label>-->
+    <!--</center>-->
+    <!--<right>-->
+        <!--<Label text="This is a right side" BorderPane.alignment="TOP_RIGHT"></Label>-->
+    <!--</right>-->
+    <!--<bottom>-->
+        <!--<Label text="This is a bottom side" alignment="CENTER" BorderPane.alignment="CENTER"></Label>-->
+    <!--</bottom>-->
+<!--</BorderPane>-->
+
+
+
+<!--Layout-->
+<!--GridPane-->
+<!--Layout-->
+<!--<?import javafx.geometry.Insets?>-->
+<!--<?import javafx.scene.layout.GridPane?>-->
+<!--<?import javafx.scene.control.Button?>-->
+<!--<?import javafx.scene.layout.ColumnConstraints?>-->
+<!--<GridPane fx:controller="sample.Controller"-->
+          <!--xmlns:fx="http://javafx.com/fxml" alignment="TOP_CENTER" hgap="10" vgap="10"-->
+          <!--gridLinesVisible="true">-->
+    <!--<padding>-->
+        <!--<Insets top="15"></Insets>-->
+    <!--</padding>-->
+    <!--<columnConstraints>-->
+        <!--<ColumnConstraints percentWidth="20"></ColumnConstraints>-->
+        <!--<ColumnConstraints percentWidth="40"></ColumnConstraints>-->
+        <!--<ColumnConstraints percentWidth="20"></ColumnConstraints>-->
+    <!--</columnConstraints>-->
+    <!--<Button text="Button one" GridPane.rowIndex="0" GridPane.columnIndex="0" GridPane.halignment="RIGHT"></Button>-->
+    <!--<Button text="Button two" GridPane.rowIndex="0" GridPane.columnIndex="1"></Button>-->
+    <!--<Button text="Button three" GridPane.rowIndex="0" GridPane.columnIndex="2"></Button>-->
+    <!--<Button text="Button four" GridPane.rowIndex="1" GridPane.columnIndex="0"></Button>-->
+    <!--<Button text="Button five" GridPane.rowIndex="1" GridPane.columnIndex="1"></Button>-->
+    <!--<Button text="Button six" GridPane.rowIndex="1" GridPane.columnIndex="2"></Button>-->
+    <!--<Button text="Button seven is on two span" GridPane.rowIndex="2" GridPane.columnIndex="0" GridPane.columnSpan="2"></Button>-->
+<!--</GridPane>-->
+
+
+
+<!--Layout-->
+<!--HBox-->
+<!--Layout-->
+<!--<?import javafx.scene.layout.HBox?>-->
+<!--<?import javafx.scene.control.Button?>-->
+<!--<?import javafx.geometry.Insets?>-->
+<!--<HBox fx:controller="sample.Controller"-->
+      <!--xmlns:fx="http://javafx.com/fxml" alignment="BOTTOM_CENTER"-->
+      <!--style="-fx-border-color: blue; -fx-border-style: dashed"-->
+      <!--spacing="5">-->
+    <!--<padding>-->
+        <!--<Insets bottom="15"></Insets>-->
+    <!--</padding>-->
+    <!--<Button text="Button one"></Button>-->
+    <!--<Button text="Button two"></Button>-->
+    <!--<Button text="Button three"></Button>-->
+    <!--<Button text="Button four"></Button>-->
+    <!--<Button text="Button five"></Button>-->
+    <!--<Button text="Button six"></Button>-->
+    <!--<Button text="Button seven"></Button>-->
+<!--</HBox>-->
+
+
+
+<!--Layout-->
+<!--VBox-->
+<!--Layout-->
+<!--<?import javafx.scene.control.Button?>-->
+<!--<?import javafx.scene.layout.VBox?>-->
+<!--<VBox fx:controller="sample.Controller"-->
+      <!--xmlns:fx="http://javafx.com/fxml" alignment="center">-->
+    <!--<Button text="Button one" prefWidth="115"></Button>-->
+    <!--<Button text="Button two" prefWidth="115"></Button>-->
+    <!--<Button text="Button three" prefWidth="115"></Button>-->
+    <!--<Button text="Button four" prefWidth="115"></Button>-->
+    <!--<Button text="Button five" prefWidth="115"></Button>-->
+    <!--<Button text="Button six" prefWidth="115"></Button>-->
+    <!--<Button text="Button seven" prefWidth="115"></Button>-->
+<!--</VBox>-->

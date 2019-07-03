@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+    http://www.springframework.org/schema/beans/spring-beans.xsd
+    http://www.springframework.org/schema/context
+    http://www.springframework.org/schema/context/spring-context.xsd">
+
+    <!-- Logging message -->
+    <bean id="myLoggerConfig" class="com.company.MyLoggerConfig" init-method="initLogger">
+        <property name="rootLoggerLevel" value="FINE"/>
+        <property name="printedLoggerLevel" value="FINE"/>
+    </bean>
+
+    <!-- Load property file -->
+    <context:property-placeholder location="classpath:Spring - XML Configuration - Dependency Injection"/>
+
+    <!-- Define your dependency here -->
+    <bean id="myRoutine"
+          class="com.company.DailyRoutine">
+    </bean>
+
+    <!-- Define your beans here -->
+    <bean id="mySupervisor"
+          class="com.company.PersonalSupervisor">
+
+        <!-- Constructor injection -->
+        <constructor-arg ref="myRoutine"/>
+
+        <!-- Setup setter injection -->
+        <property name="title" value="Boss"/>
+        <property name="emailAddress" value="${foo.emailAddress}"/>
+    </bean>
+</beans>

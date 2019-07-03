@@ -1,0 +1,18 @@
+{
+	"id": 1,
+	"firstName": "Frog",
+	"lastName": "Green",
+	"typo": false,
+	"webAddress": {
+		"path": "froggreen",
+		"rootDomain": "github",
+		"topLevelDomain": "com"
+	},
+	"languages": [
+		"C#",
+		"Java",
+		"Python",
+		"TypeScript"
+	],
+	"ignore": "value to ignore"
+}

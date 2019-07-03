@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE log SYSTEM "logger.dtd">
+<log>
+<record>
+  <date>2018-12-11T18:45:13.441877800Z</date>
+  <millis>1544553913441</millis>
+  <nanos>877800</nanos>
+  <sequence>9</sequence>
+  <logger>myThirdLogger</logger>
+  <level>FINER</level>
+  <class>Main</class>
+  <method>Enter...</method>
+  <thread>1</thread>
+  <message>ENTRY</message>
+</record>
+<record>
+  <date>2018-12-11T18:45:13.453870800Z</date>
+  <millis>1544553913453</millis>
+  <nanos>870800</nanos>
+  <sequence>10</sequence>
+  <logger>myThirdLogger</logger>
+  <level>FINER</level>
+  <class>Main</class>
+  <method>Exit...</method>
+  <thread>1</thread>
+  <message>RETURN</message>
+</record>
+<record>
+  <date>2018-12-11T18:45:13.453870800Z</date>
+  <millis>1544553913453</millis>
+  <nanos>870800</nanos>
+  <sequence>11</sequence>
+  <logger>myThirdLogger</logger>
+  <level>FINER</level>
+  <class>Main</class>
+  <method>Something went wrong, we got error here</method>
+  <thread>1</thread>
+  <message>THROW</message>
+  <exception>
+    <message>java.io.IOException</message>
+    <frame>
+      <class>com.company.Main</class>
+      <method>main</method>
+      <line>74</line>
+    </frame>
+  </exception>
+</record>
+</log>

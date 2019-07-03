@@ -1,0 +1,106 @@
+<?import javafx.scene.layout.GridPane?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+
+<?import java.lang.String?>
+<?import javafx.collections.FXCollections?>
+<?import javafx.scene.control.Accordion?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.ColorPicker?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.Slider?>
+<?import javafx.scene.control.Spinner?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.TitledPane?>
+<?import javafx.scene.control.ToggleButton?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<GridPane alignment="CENTER" hgap="10" vgap="10" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8.0.121" fx:controller="sample.Controller">
+    <Label WrapText="true" text="Random text" textFill="blue" GridPane.columnIndex="0" GridPane.rowIndex="0"></Label>
+    <Button text="Just click!" GridPane.columnIndex="1" GridPane.rowIndex="0"></Button>
+    <HBox GridPane.columnIndex="2" GridPane.rowIndex="0">
+        <ToggleButton text="Toggle 1" />
+        <ToggleButton text="Toggle 2" />
+        <ToggleButton text="Toggle 3" />
+    </HBox>
+
+
+    <TextField GridPane.columnIndex="0" GridPane.rowIndex="1" />
+    <PasswordField GridPane.columnIndex="1" GridPane.rowIndex="1" />
+
+
+    <Slider max="100" min="0" minorTickCount="2" showTickLabels="true" showTickMarks="true" snapToTicks="true" GridPane.columnIndex="0" GridPane.columnSpan="2" GridPane.rowIndex="2" />
+    <Spinner editable="true" initialValue="43" max="100" min="0" GridPane.columnIndex="2" GridPane.rowIndex="2" />
+
+
+    <ComboBox GridPane.columnIndex="0" GridPane.columnSpan="1" GridPane.rowIndex="3">
+        <items>
+            <FXCollections fx:factory="observableArrayList">
+                <String fx:value="ComboBox 1" />
+                <String fx:value="ComboBox 2" />
+                <String fx:value="ComboBox 3" />
+            </FXCollections>
+        </items>
+        <value>
+            <String fx:value="ComboBox default" />
+        </value>
+    </ComboBox>
+    <ChoiceBox GridPane.columnIndex="1" GridPane.rowIndex="3">
+        <items>
+            <FXCollections fx:factory="observableArrayList">
+                <String fx:value="ChoiceBox 1" />
+                <String fx:value="ChoiceBox 2" />
+                <String fx:value="ChoiceBox 3" />
+            </FXCollections>
+        </items>
+        <value>
+            <String fx:value="ChoiceBox default" />
+        </value>
+    </ChoiceBox>
+
+
+    <ColorPicker GridPane.columnIndex="0" GridPane.rowIndex="4" />
+    <DatePicker GridPane.columnIndex="1" GridPane.rowIndex="4" />
+
+
+    <Accordion GridPane.columnIndex="0" GridPane.columnSpan="1" GridPane.rowIndex="5">
+        <panes>
+            <TitledPane text="Check text" GridPane.columnIndex="0" GridPane.rowIndex="5">
+                <Label text="text one" />
+            </TitledPane>
+            <TitledPane text="Check text"  GridPane.columnIndex="0" GridPane.rowIndex="5">
+                <Label text="text two" />
+            </TitledPane>
+            <TitledPane fx:id="textthree" text="Check text"  GridPane.columnIndex="0" GridPane.rowIndex="5">
+                <Label text="text three" />
+            </TitledPane>
+        </panes>
+    </Accordion>
+    <VBox GridPane.columnIndex="1" GridPane.rowIndex="5">
+        <CheckBox indeterminate="true" text="CheckBox 1" />
+        <CheckBox text="CheckBox 2" />
+        <CheckBox text="CheckBox 3" />
+    </VBox>
+    <fx:define>
+        <ToggleGroup fx:id="colorToggleGroup" />
+    </fx:define>
+    <VBox GridPane.columnIndex="2" GridPane.rowIndex="5">
+        <RadioButton text="Red">
+            <toggleGroup>
+                <ToggleGroup fx:id="colorToggleGroup" />
+            </toggleGroup>
+        </RadioButton>
+        <RadioButton selected="true" text="Green" toggleGroup="$colorToggleGroup"/>
+        <RadioButton text="Blue" toggleGroup="$colorToggleGroup" />
+    </VBox>
+</GridPane>
