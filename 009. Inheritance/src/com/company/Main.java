@@ -11,7 +11,6 @@ public class Main {
 
         //Creating new House
         House myFirstHouse = new House(10, 3, 1, 2, 3);
-        ;
 
         //Creating new Flat
         Flat myFirstFlat = new Flat(3, 2, 1, 1, 1);
